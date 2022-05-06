@@ -1,5 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .row {
   background: yellow;
   height: 40px;
   display: flex;
+  justify-content: center;
+}
+
+.box {
+  background: gray;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
 }
