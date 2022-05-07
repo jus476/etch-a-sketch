@@ -25,3 +25,11 @@ function createBox(parent) {
 
 const gridView = document.querySelector('.grid');
 createGrid();
+
+const boxItems = document.querySelectorAll('.box');
+
+boxItems.forEach((box) => {
+    box.addEventListener('mouseenter', () => {
+        box.style.backgroundColor = 'black';
+    });
+})
