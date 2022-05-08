@@ -14,8 +14,13 @@ body {
 
 .title {
   text-align: center;
-  color: black;
+  color: white;
+  background: #DC302B;
+  width: 825px;
   font-size: 40px;
+  padding: 15px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
   font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
@@ -23,7 +28,10 @@ body {
   background: #DC302B;
   display: flex;
   padding: 10px;
-  width: 800px;
+  width: 825px;
+  padding: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   flex-shrink: 0;
   justify-content: space-between;
 }
@@ -34,13 +42,15 @@ button {
   height: 72px;
   border-radius: 50px;
   background: white;
-  border: 1px solid black;
+  border: 2px solid black;
   color: black;
   font-size: 16px;
   font-weight: bold;
 }
 
 .grid {
+  background: #DC302B;
+  width: 825px;
   display: flex;
   flex-direction: column;
   justify-content: center;

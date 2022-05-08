@@ -27,7 +27,7 @@ function createGrid(parent) {
  * @return {object} newly created row element.
  */
 function createRow(parent) {
-    let field = document.createElement('div');
+    const field = document.createElement('div');
     field.classList.add("row");
     parent.appendChild(field);
     return field;
@@ -40,7 +40,7 @@ function createRow(parent) {
  * @return {void}
  */
 function createBox(parent) {
-    let field = document.createElement('div');
+    const field = document.createElement('div');
     field.style.width = `${MAX_PIXELS/number_of_cols}px`;
     field.style.height = `${MAX_PIXELS/number_of_rows}px`;
     field.classList.add("box");
@@ -57,7 +57,7 @@ function createBox(parent) {
  * @return {void}
  */
 function clearGrid() {
-    let rows = document.querySelectorAll('.row');
+    const rows = document.querySelectorAll('.row');
     rows.forEach((row) => {
         gridView.removeChild(row);
     });
@@ -109,7 +109,7 @@ gridButton.addEventListener('click', () => {
 const clearButton = document.querySelector('.clear-grid');
 
 clearButton.addEventListener('click', () => {
-    let boxes = document.querySelectorAll('.box');
+    const boxes = document.querySelectorAll('.box');
 
     boxes.forEach((box) => {
         box.style.backgroundColor = 'gray';
