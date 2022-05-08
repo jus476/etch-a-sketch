@@ -8,8 +8,27 @@ html {
 
 .title {
   text-align: center;
-  font-size: 30px;
+  color: black;
+  font-size: 40px;
   font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.control {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 8px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .grid {
@@ -19,7 +38,6 @@ html {
 }
 
 .row {
-  /* background: yellow; */
   display: flex;
   justify-content: center;
 }
@@ -27,6 +45,4 @@ html {
 .box {
   background: gray;
   flex-shrink: 0;
-  /* height: 40px;
-  width: 40px; */
 }
