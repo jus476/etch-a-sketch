@@ -105,3 +105,13 @@ gridButton.addEventListener('click', () => {
     promptForNewGridSize();
     redrawGrid();
 });
+
+const clearButton = document.querySelector('.clear-grid');
+
+clearButton.addEventListener('click', () => {
+    let boxes = document.querySelectorAll('.box');
+
+    boxes.forEach((box) => {
+        box.style.backgroundColor = 'gray';
+    });
+});
